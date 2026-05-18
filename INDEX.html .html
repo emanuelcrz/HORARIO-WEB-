@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario - Ortiz Cruz Reynaldo Emanuel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        /* ── PANTALLAS ── */
+        .pantalla {
+            display: none;
+        }
+        .pantalla.activa {
+            display: block;
+        }
+
+        /* ── CONTENEDOR ── */
+        .contenedor-principal {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #f8f9fa;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            padding: 2rem;
+        }
+
+        /* ── ENCABEZADO ── */
+        .encabezado {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid #888a8f;
+        }
+
+        .logo {
+            width: 90px;
+            height: auto;
+        }
+
+        .texto-encabezado h1,
+        .texto-encabezado h2 {
+            color: #000000;
+            margin: 0.3rem 0;
+        }
+
+        .texto-encabezado h1 { font-size: 1.7rem; }
+        .texto-encabezado h2 { font-size: 1.3rem; font-weight: 600; }
+
+        /* ── DATOS ALUMNO ── */
+        .datos-alumno {
+            background-color: #e6e7e9;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .datos-alumno p {
+            margin: 0.3rem 0;
+            color: #000000;
+            font-size: 0.95rem;
+        }
+
+        /* ── SECCIÓN MATERIAS ── */
+        .seccion-materias h3 {
+            color: #000000;
+            font-size: 1.3rem;
+            margin-bottom: 1.2rem;
+            padding-left: 0.5rem;
+            border-left: 4px solid #555658;
+        }
+
+        .lista-materias {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .materia-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #eeeff1;
+            padding: 0.9rem 1.2rem;
+            border-radius: 6px;
+            border: 1px solid #c0c2c6;
+            transition: all 0.2s ease;
+        }
+
+        .materia-item:hover {
+            background-color: #dcdde0;
+            transform: translateX(4px);
+        }
+
+        .nombre-materia {
+            font-size: 1rem;
+            color: #000000;
+            font-weight: 500;
+        }
+
+        /* ── BOTÓN NEGRO ── */
+        .btn-info {
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            padding: 0.5rem 1.2rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-info:hover { background-color: #333333; }
+
+        /* ── PÁGINA DE MATERIA ── */
+        .pagina-materia {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #f8f9fa;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            padding: 2rem;
+        }
+
+        .pagina-materia .encabezado {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid #888a8f;
+        }
+
+        .titulo-materia {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 0.5rem;
+            padding-left: 0.5rem;
+            border-left: 4px solid #000000;
+        }
+
+        .subtitulo-materia {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        .contenido-materia {
+            background-color: #eeeff1;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            color: #000000;
+            font-size: 0.95rem;
+        }
+
+        .contenido-materia p {
+            margin-bottom: 0.7rem;
+        }
+
+        .contenido-materia ul {
+            padding-left: 1.5rem;
+            margin-bottom: 0.7rem;
+        }
+
+        .contenido-materia ul li {
+            margin-bottom: 0.4rem;
+        }
+
+        .seccion-info {
+            margin-bottom: 1.2rem;
+        }
+
+        .seccion-info h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 0.4rem;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 0.2rem;
+        }
+
+        /* ── BOTÓN REGRESAR ── */
+        .btn-regresar {
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            padding: 0.7rem 1.8rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: background-color 0.2s ease;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-regresar:hover { background-color: #333333; }
+
+        /* ── RESPONSIVO ── */
+        @media (max-width: 600px) {
+            .encabezado { flex-direction: column; gap: 1rem; }
+            .logo { width: 70px; }
+            .materia-item { flex-direction: column; align-items: flex-start; gap: 0.8rem; }
+            .btn-info { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════
+     PANTALLA 0: INICIO
+═══════════════════════════════════════════════ -->
+<div id="inicio" class="pantalla activa">
+    <div class="contenedor-principal">
+        <div class="encabezado">
+            <img src="https://1000marcas.net/wp-content/uploads/2022/01/UANL-Logo.png" alt="Logo UANL" class="logo">
+            <div class="texto-encabezado">
+                <h1>Universidad Autónoma de Nuevo León</h1>
+                <h2>Facultad de Ingeniería Mecánica y Eléctrica</h2>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfecMVGiq7fC3aq2l73f7a0w-OA3Fubv3W-w&s" alt="Logo FIME" class="logo">
+        </div>
+
+        <div class="datos-alumno">
+            <p><strong>Alumno:</strong> Ortiz Cruz Reynaldo Emanuel - 1997171</p>
+            <p><strong>Carrera:</strong> Ingeniero Administrador de Sistemas</p>
+            <p><strong>Periodo:</strong> Enero - Junio 2026</p>
+        </div>
+
+        <div class="seccion-materias">
+            <h3>Materias del Horario</h3>
+            <div class="lista-materias">
+
+                <div class="materia-item">
+                    <span class="nombre-materia">Contexto Social de la Profesión</span>
+                    <button class="btn-info" onclick="mostrar('contexto')">Información</button>
+                </div>
+
+                <div class="materia-item">
+                    <span class="nombre-materia">Liderazgo</span>
+                    <button class="btn-info" onclick="mostrar('liderazgo')">Información</button>
+                </div>
+
+                <div class="materia-item">
+                    <span class="nombre-materia">Programación de Estructuras de Datos</span>
+                    <button class="btn-info" onclick="mostrar('estructuras')">Información</button>
+                </div>
+
+                <div class="materia-item">
+                    <span class="nombre-materia">Programación Web</span>
+                    <button class="btn-info" onclick="mostrar('web')">Información</button>
+                </div>
+
+                <div class="materia-item">
+                    <span class="nombre-materia">Análisis de Sistemas</span>
+                    <button class="btn-info" onclick="mostrar('analisis')">Información</button>
+                </div>
+
+                <div class="materia-item">
+                    <span class="nombre-materia">Transmisión y Comunicación de Datos</span>
+                    <button class="btn-info" onclick="mostrar('transmision')">Información</button>
+                </div>
+
+                <div class="materia-item">
+                    <span class="nombre-materia">Admon de Proyectos de Software</span>
+                    <button class="btn-info" onclick="mostrar('proyectos')">Información</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════
+     PANTALLA 1: CONTEXTO SOCIAL DE LA PROFESIÓN
+═══════════════════════════════════════════════ -->
+<div id="contexto" class="pantalla">
+    <div class="pagina-materia">
+        <div class="encabezado">
+            <img src="https://1000marcas.net/wp-content/uploads/2022/01/UANL-Logo.png" alt="Logo UANL" class="logo">
+            <div class="texto-encabezado">
+                <h1>Universidad Autónoma de Nuevo León</h1>
+                <h2>Facultad de Ingeniería Mecánica y Eléctrica</h2>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfecMVGiq7fC3aq2l73f7a0w-OA3Fubv3W-w&s" alt="Logo FIME" class="logo">
+        </div>
+
+        <button class="btn-regresar" onclick="mostrar('inicio')">&#8592; Regresar al Inicio</button>
+
+        <div class="titulo-materia">Contexto Social de la Profesión</div>
+        <div class="subtitulo-materia">Ingeniero Administrador de Sistemas | Enero - Junio 2026</div>
+
+        <div class="contenido-materia">
+            <div class="seccion-info">
+                <h4>Descripción General</h4>
+                <p>Esta materia analiza el papel del ingeniero en sistemas dentro de la sociedad contemporánea, abordando su responsabilidad ética, social y profesional en un entorno tecnológico en constante evolución.</p>
+            </div>
+            <div class="seccion-info">
+                <h4>Temas Principales</h4>
+                <ul>
+                    <li>Historia y evolución de la ingeniería en sistemas en México y el mundo.</li>
+                    <li>Responsabilidad social del profesionista en tecnologías de la información.</li>
+                    <li>Ética profesional y códigos de conducta en el área de TI.</li>
+                    <li>Impacto de la tecnología en el mercado laboral y la sociedad.</li>
+                    <li>Normativas y regulaciones relacionadas con la profesión.</li>
+                    <li>El ingeniero en sistemas como agente de cambio e innovación.</li>
+                    <li>Globalización y su influencia en el desarrollo tecnológico.</li>
+                    <li>Sostenibilidad y desarrollo tecnológico responsable.</li>
+                    <li>Derechos de autor, privacidad y seguridad de la información.</li>
+                    <li>Emprendimiento e innovación tecnológica en el contexto actual.</li>
+                </ul>
+            </div>
+            <div class="seccion-info">
+                <h4>Objetivo</h4>
+                <p>Desarrollar en el estudiante una visión integral de su papel como profesionista, comprendiendo el impacto de sus decisiones en la sociedad y el entorno empresarial, fomentando una conducta ética y responsable en el ejercicio de la profesión.</p>
+            </div>
+            <div class="seccion-info">
+                <h4>Evaluación</h4>
+                <p>La evaluación incluye ensayos críticos, participación en debates, análisis de casos reales y un proyecto integrador sobre el impacto social de la tecnología en una comunidad específica de Nuevo León.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════
+     PANTALLA 2: LIDERAZGO
+═══════════════════════════════════════════════ -->
+<div id="liderazgo" class="pantalla">
+    <div class="pagina-materia">
+        <div class="encabezado">
+            <img src="https://1000marcas.net/wp-content/uploads/2022/01/UANL-Logo.png" alt="Logo UANL" class="logo">
+            <div class="texto-encabezado">
+                <h1>Universidad Autónoma de Nuevo León</h1>
+                <h2>Facultad de Ingeniería Mecánica y Eléctrica</h2>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfecMVGiq7fC3aq2l73f7a0w-OA3Fubv3W-w&s" alt="Logo FIME" class="logo">
+        </div>
+
+        <button class="btn-regresar" onclick="mostrar('inicio')">&#8592; Regresar al Inicio</button>
+
+        <div class="titulo-materia">Liderazgo</div>
+        <div class="subtitulo-materia">Ingeniero Administrador de Sistemas | Enero - Junio 2026</div>
+
+        <div class="contenido-materia">
+            <div class="seccion-info">
+                <h4>Descripción General</h4>
+                <p>Materia orientada al desarrollo de habilidades de liderazgo en el contexto de equipos de tecnología e ingeniería, estudiando los diferentes estilos y modelos de liderazgo aplicados en entornos organizacionales modernos.</p>
+            </div>
+            <div class="seccion-info">
+                <h4>Temas Principales</h4>
+                <ul>
+                    <li>Concepto y evolución del liderazgo a lo largo de la historia.</li>
+                    <li>Estilos de liderazgo: transformacional, transaccional, situacional y servicial.</li>
+                    <li>Inteligencia emocional y su relación con el liderazgo efectivo.</li>
+                    <li>Comunicación asertiva y gestión de conflictos en equipos de trabajo.</li>
+                    <li>Toma de decisiones bajo presión y en contextos de incertidumbre.</li>
+                    <li>Motivación de equipos de alto rendimiento en proyectos de TI.</li>
+                    <li>Liderazgo ágil y gestión de equipos en metodologías Scrum y Kanban.</li>
+                    <li>Ética en el liderazgo y responsabilidad del líder.</li>
+                    <li>Casos de estudio de líderes exitosos en la industria tecnológica.</li>
+                    <li>Desarrollo del plan personal de liderazgo.</li>
+                </ul>
+            </div>
+            <div class="seccion-info">
+                <h4>Objetivo</h4>
+                <p>Formar ingenieros capaces de liderar equipos multidisciplinarios con visión estratégica, inteligencia emocional y habilidades de comunicación que les permitan generar valor en organizaciones tecnológicas.</p>
+            </div>
+            <div class="seccion-info">
+                <h4>Evaluación</h4>
+                <p>Incluye análisis de casos de liderazgo real, exposiciones grupales, autoevaluaciones de estilos de liderazgo personal y un proyecto final de simulación de gestión de equipo en un escenario empresarial de TI.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════
+     PANTALLA 3: PROGRAMACIÓN DE ESTRUCTURAS DE DATOS
+═══════════════════════════════════════════════ -->
+<div id="estructuras" class="pantalla">
+    <div class="pagina-materia">
+        <div class="encabezado">
+            <img src="https://1000marcas.net/wp-content/uploads/2022/01/UANL-Logo.png" alt="Logo UANL" class="logo">
+            <div class="texto-encabezado">
+                <h1>Universidad Autónoma de Nuevo León</h1>
+                <h2>Facultad de Ingeniería Mecánica y Eléctrica</h2>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfecMVGiq7fC3aq2l73f7a0w-OA3Fubv3W-w&s" alt="Logo FIME" class="logo">
+        </div>
+
+        <button class="btn-regresar" onclick="mostrar('inicio')">&#8592; Regresar al Inicio</button>
+
+        <div class="titulo-materia">Programación de Estructuras de Datos</div>
+        <div class="subtitulo-materia">Ingeniero Administrador de Sistemas | Enero - Junio 2026</div>
+
+        <div class="contenido-materia">
+            <div class="seccion-info">
+                <h4>Descripción General</h4>
+                <p>Materia fundamental de la carrera que estudia las formas de organizar, almacenar y manipular datos de manera eficiente, utilizando estructuras lineales y no lineales implementadas en lenguajes de programación modernos.</p>
+            </div>
+            <div class="seccion-info">
+                <h4>Temas Principales</h4>
+                <ul>
+                    <li>Introducción a las estructuras de datos y su importancia en el desarrollo de software.</li>
+                    <li>Arreglos estáticos y dinámicos: declaración, acceso y manipulación.</li>
+                    <li>Pilas (Stacks): implementación y casos de uso.</li>
+                    <li>Colas (Queues) y colas de prioridad.</li>
+                    <li>Listas enlazadas simples, dobles y circulares.</li>
+                    <li>Árboles binarios, árboles de búsqueda y árboles AVL.</li>
+                    <li>Grafos: representación mediante matrices y listas de adyacencia.</li>
+                    <li>Algoritmos de búsqueda: lineal, binaria y en grafos (BFS, DFS).</li>
+                    <li>Algoritmos de ordenamiento: burbuja, inserción, selección, quicksort y mergesort.</li>
+                    <li>Análisis de complejidad algorítmica: notación Big O.</li>
+                </ul>
+            </div>
+            <div class="seccion-info">
+                <h4>Objetivo</h4>
+                <p>Capacitar al estudiante en el diseño e implementación de algoritmos eficientes utilizando estructuras de datos adecuadas para la resolución de problemas computacionales complejos.</p>
+            </div>
+            <div class="seccion-info">
+                <h4>Evaluación</h4>
+                <p>Exámenes teórico-prácticos, implementación de proyectos de programación en C++ o Java, prácticas de laboratorio semanales y un proyecto final de aplicación de estructuras de datos en un sistema real.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════
+     PANTALLA 4: PROGRAMACIÓN WEB
+═══════════════════════════════════════════════ -->
+<div id="web" class="pantalla">
+    <div class="pagina-materia">
+        <div class="encabezado">
+            <img src="https://1000marcas.net/wp-content/uploads/2022/01/UANL-Logo.png" alt="Logo UANL" class="logo">
+            <div class="texto-encabezado">
+                <h1>Universidad Autónoma de Nuevo León</h1>
+                <h2>Facultad de Ingeniería Mecánica y Eléctrica</h2>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfecMVGiq7fC3aq2l73f7a0w-OA3Fubv3W-w&s" alt="Logo FIME" class="logo">
+        </div>
+
+        <button class="btn-regresar" onclick="mostrar('inicio')">&#8592; Regresar al Inicio</button>
+
+        <div class="titulo-materia">Programación Web</div>
+        <div class="subtitulo-materia">Ingeniero Administrador de Sistemas | Enero - Junio 2026</div>
+
+        <div class="contenido-materia">
+            <div class="seccion-info">
+                <h4>Descripción General</h4>
+                <p>Materia que aborda el desarrollo de aplicaciones web tanto en el lado del cliente como del servidor, cubriendo las tecnologías y herramientas más utilizadas en la industria del desarrollo web moderno.</p>
+            </div>
+            <div class="seccion-info">
+                <h4>Temas Principales</h4>
+                <ul>
+                    <li>Fundamentos de HTML5: estructura semántica y elementos multimedia.</li>
+                    <li>CSS3: selectores, modelo de caja, Flexbox y Grid Layout.</li>
+                    <li>JavaScript: variables, funciones, eventos y manipulación del DOM.</li>
+                    <li>Programación orientada a objetos en JavaScript (ES6+).</li>
+                    <li>Consumo de APIs REST con Fetch y Axios.</li>
+                    <li>Introducción a frameworks: React.js o Vue.js.</li>
+                    <li>Desarrollo del lado del servidor con Node.js y Express.</li>
+                    <li>Bases de datos relacionales y no relacionales en aplicaciones web.</li>
+                    <li>Autenticación y seguridad en aplicaciones web (JWT, OAuth).</li>
+                    <li>Despliegue de aplicaciones web en plataformas en la nube.</li>
+                </ul>
+            </div>
+            <div class="seccion-info">
+                <h4>Objetivo</h4>
+                <p>Desarrollar en el estudiante las competencias necesarias para diseñar, construir y desplegar aplicaciones web completas (full stack), siguiendo buenas prácticas de desarrollo y estándares de la industria.</p>
+            </div>
+            <div class="seccion-info">
+                <h4>Evaluación</h4>
+                <p>Proyectos de desarrollo web progresivos, desde una página estática hasta una aplicación web completa con base de datos, exámenes prácticos en laboratorio y presentación final de proyecto integrador.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════
+     PANTALLA 5: ANÁLISIS DE SISTEMAS
+═══════════════════════════════════════════════ -->
+<div id="analisis" class="pantalla">
+    <div class="pagina-materia">
+        <div class="encabezado">
+            <img src="https://1000marcas.net/wp-content/uploads/2022/01/UANL-Logo.png" alt="Logo UANL" class="logo">
+            <div class="texto-encabezado">
+                <h1>Universidad Autónoma de Nuevo León</h1>
+                <h2>Facultad de Ingeniería Mecánica y Eléctrica</h2>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfecMVGiq7fC3aq2l73f7a0w-OA3Fubv3W-w&s" alt="Logo FIME" class="logo">
+        </div>
+
+        <button class="btn-regresar" onclick="mostrar('inicio')">&#8592; Regresar al Inicio</button>
+
+        <div class="titulo-materia">Análisis de Sistemas</div>
+        <div class="subtitulo-materia">Ingeniero Administrador de Sistemas | Enero - Junio 2026</div>
+
+        <div class="contenido-materia">
+            <div class="seccion-info">
+                <h4>Descripción General</h4>
+                <p>Materia que estudia los métodos, técnicas y herramientas para el análisis, diseño y modelado de sistemas de información, abarcando desde el levantamiento de requerimientos hasta la documentación formal del sistema.</p>
+            </div>
+            <div class="seccion-info">
+                <h4>Temas Principales</h4>
+                <ul>
+                    <li>Introducción a los sistemas de información y su clasificación.</li>
+                    <li>Ciclo de vida del desarrollo de sistemas (SDLC).</li>
+                    <li>Levantamiento y análisis de requerimientos funcionales y no funcionales.</li>
+                    <li>Diagramas de casos de uso y actores del sistema.</li>
+                    <li>Diagramas de flujo de datos (DFD) nivel 0 y nivel 1.</li>
+                    <li>Diagramas entidad-relación (DER) y modelado de bases de datos.</li>
+                    <li>Diagramas de clases UML y modelado orientado a objetos.</li>
+                    <li>Prototipos y maquetas de interfaces de usuario.</li>
+                    <li>Metodologías ágiles aplicadas al análisis de sistemas.</li>
+                    <li>Elaboración de documentación técnica y manual de usuario.</li>
+                </ul>
+            </div>
+            <div class="seccion-info">
+                <h4>Objetivo</h4>
+                <p>Capacitar al estudiante en el análisis y modelado formal de sistemas de información, desarrollando la capacidad de traducir necesidades organizacionales en especificaciones técnicas claras y documentadas.</p>
+            </div>
+            <div class="seccion-info">
+                <h4>Evaluación</h4>
+                <p>Proyecto integrador (PIA) de análisis de un sistema real, exámenes parciales, entrega de diagramas UML y DFD, y presentación final ante el grupo con documentación técnica completa.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════
+     PANTALLA 6: TRANSMISIÓN Y COMUNICACIÓN DE DATOS
+═══════════════════════════════════════════════ -->
+<div id="transmision" class="pantalla">
+    <div class="pagina-materia">
+        <div class="encabezado">
+            <img src="https://1000marcas.net/wp-content/uploads/2022/01/UANL-Logo.png" alt="Logo UANL" class="logo">
+            <div class="texto-encabezado">
+                <h1>Universidad Autónoma de Nuevo León</h1>
+                <h2>Facultad de Ingeniería Mecánica y Eléctrica</h2>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfecMVGiq7fC3aq2l73f7a0w-OA3Fubv3W-w&s" alt="Logo FIME" class="logo">
+        </div>
+
+        <button class="btn-regresar" onclick="mostrar('inicio')">&#8592; Regresar al Inicio</button>
+
+        <div class="titulo-materia">Transmisión y Comunicación de Datos</div>
+        <div class="subtitulo-materia">Ingeniero Administrador de Sistemas | Enero - Junio 2026</div>
+
+        <div class="contenido-materia">
+            <div class="seccion-info">
+                <h4>Descripción General</h4>
+                <p>Materia que estudia los principios, protocolos y tecnologías involucrados en la transmisión de datos entre sistemas computacionales, abarcando desde los fundamentos físicos de las redes hasta los protocolos de comunicación modernos.</p>
+            </div>
+            <div class="seccion-info">
+                <h4>Temas Principales</h4>
+                <ul>
+                    <li>Fundamentos de comunicación de datos: señales analógicas y digitales.</li>
+                    <li>Medios de transmisión: cableado UTP, fibra óptica y comunicación inalámbrica.</li>
+                    <li>Modelo de referencia OSI y sus 7 capas.</li>
+                    <li>Protocolo TCP/IP y arquitectura de Internet.</li>
+                    <li>Direccionamiento IP versión 4 y versión 6, subnetting y CIDR.</li>
+                    <li>Protocolos de la capa de aplicación: HTTP, FTP, SMTP, DNS y DHCP.</li>
+                    <li>Tecnologías de red LAN, WAN y redes inalámbricas (Wi-Fi, Bluetooth).</li>
+                    <li>Seguridad en redes: cifrado, firewalls y VPN.</li>
+                    <li>Redes definidas por software (SDN) e Internet de las Cosas (IoT).</li>
+                    <li>Tendencias en comunicaciones: 5G, computación en la nube y edge computing.</li>
+                </ul>
+            </div>
+            <div class="seccion-info">
+                <h4>Objetivo</h4>
+                <p>Proporcionar al estudiante los fundamentos teóricos y prácticos de las redes de comunicación de datos, permitiéndole diseñar, configurar y administrar infraestructuras de red en entornos empresariales.</p>
+            </div>
+            <div class="seccion-info">
+                <h4>Evaluación</h4>
+                <p>Prácticas de laboratorio con simuladores de redes (Packet Tracer), exámenes teóricos sobre protocolos, configuración de equipos de red y proyecto final de diseño de infraestructura de red para una empresa.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════
+     PANTALLA 7: ADMON DE PROYECTOS DE SOFTWARE
+═══════════════════════════════════════════════ -->
+<div id="proyectos" class="pantalla">
+    <div class="pagina-materia">
+        <div class="encabezado">
+            <img src="https://1000marcas.net/wp-content/uploads/2022/01/UANL-Logo.png" alt="Logo UANL" class="logo">
+            <div class="texto-encabezado">
+                <h1>Universidad Autónoma de Nuevo León</h1>
+                <h2>Facultad de Ingeniería Mecánica y Eléctrica</h2>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfecMVGiq7fC3aq2l73f7a0w-OA3Fubv3W-w&s" alt="Logo FIME" class="logo">
+        </div>
+
+        <button class="btn-regresar" onclick="mostrar('inicio')">&#8592; Regresar al Inicio</button>
+
+        <div class="titulo-materia">Administración de Proyectos de Software</div>
+        <div class="subtitulo-materia">Ingeniero Administrador de Sistemas | Enero - Junio 2026</div>
+
+        <div class="contenido-materia">
+            <div class="seccion-info">
+                <h4>Descripción General</h4>
+                <p>Materia que forma al estudiante en la planificación, ejecución, control y cierre de proyectos de desarrollo de software, utilizando metodologías tradicionales y ágiles para garantizar la entrega exitosa dentro del alcance, tiempo y presupuesto establecidos.</p>
+            </div>
+            <div class="seccion-info">
+                <h4>Temas Principales</h4>
+                <ul>
+                    <li>Fundamentos de administración de proyectos: alcance, tiempo, costo y calidad.</li>
+                    <li>Marco de referencia PMI y guía PMBOK aplicada a proyectos de software.</li>
+                    <li>Iniciación del proyecto: acta constitutiva y análisis de interesados.</li>
+                    <li>Planificación: EDT, cronograma, presupuesto y gestión de riesgos.</li>
+                    <li>Metodologías ágiles: Scrum, Kanban, XP y SAFe.</li>
+                    <li>Herramientas de gestión: MS Project, Jira, Trello y GitHub Projects.</li>
+                    <li>Gestión de equipos de desarrollo: comunicación y resolución de conflictos.</li>
+                    <li>Control y seguimiento del proyecto: KPIs, valor ganado y dashboards.</li>
+                    <li>Gestión de la calidad del software: pruebas, revisiones y métricas.</li>
+                    <li>Cierre del proyecto: lecciones aprendidas y entrega formal al cliente.</li>
+                </ul>
+            </div>
+            <div class="seccion-info">
+                <h4>Objetivo</h4>
+                <p>Desarrollar en el estudiante las competencias para gestionar proyectos de software de forma efectiva, aplicando marcos de referencia reconocidos internacionalmente y herramientas de gestión que garanticen la calidad y entrega oportuna.</p>
+            </div>
+            <div class="seccion-info">
+                <h4>Evaluación</h4>
+                <p>Simulación completa de la gestión de un proyecto de software en equipo, entrega de documentos de planificación, uso de herramientas como Jira o MS Project, exámenes parciales y presentación ejecutiva final ante el profesor como cliente.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════
+     JAVASCRIPT: NAVEGACIÓN ENTRE PANTALLAS
+═══════════════════════════════════════════════ -->
+<script>
+    function mostrar(id) {
+        // Ocultar todas las pantallas
+        document.querySelectorAll('.pantalla').forEach(p => {
+            p.classList.remove('activa');
+        });
+        // Mostrar la pantalla seleccionada
+        document.getElementById(id).classList.add('activa');
+        // Scroll al inicio de la página
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>
