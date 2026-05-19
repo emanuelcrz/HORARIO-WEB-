@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HorarioUniversitario>
+
+    <!-- ================= PANTALLA DE INICIO ================= -->
+    <Inicio>
+        <Nombre>Reynaldo Emmanuel Ortiz Cruz</Nombre>
+        <Matricula>1997171</Matricula>
+        <Carrera>IAS - Ingenieria en Administrador de Sistemas</Carrera>
+        <Semestre>Sexto Semestre</Semestre>
+        <Periodo>Enero - Junio 2026</Periodo>
+
+        <Mensaje>
+            Bienvenido al sistema de consulta de horario.
+            Selecciona una materia para ver su informacion,
+            horarios y salones.
+        </Mensaje>
+
+        <MenuMaterias>
+            <Boton materia="CONT">Contexto Social de la Profesion</Boton>
+            <Boton materia="LIDE">Liderazgo</Boton>
+            <Boton materia="PROEST">Programacion de Estructuras de Datos</Boton>
+            <Boton materia="PROWEB">Programacion Web</Boton>
+            <Boton materia="ANSIS">Analisis de Sistemas</Boton>
+            <Boton materia="TRANS">Transmision y Comunicacion de Datos</Boton>
+            <Boton materia="APROY">Administracion de Proyectos de Software</Boton>
+        </MenuMaterias>
+    </Inicio>
+
+
+    <!-- ================= HORARIO GENERAL ================= -->
+    <HorarioGeneral>
+
+        <Lunes>
+            <Clase>
+                <Materia>Programacion de Estructuras de Datos</Materia>
+                <Clave>PROEST</Clave>
+                <Hora>12:50 pm - 1:40 pm</Hora>
+                <Salon>004 / 2107</Salon>
+            </Clase>
+
+            <Clase>
+                <Materia>Analisis de Sistemas</Materia>
+                <Clave>ANSIS</Clave>
+                <Hora>5:50 pm - 6:40 pm</Hora>
+                <Salon>007 / 2107</Salon>
+            </Clase>
+
+            <Clase>
+                <Materia>Programacion Web</Materia>
+                <Clave>PROWEB</Clave>
+                <Hora>6:40 pm - 7:30 pm</Hora>
+                <Salon>012 / 4208</Salon>
+            </Clase>
+
+            <Clase>
+                <Materia>Administracion de Proyectos de Software</Materia>
+                <Clave>APROY</Clave>
+                <Hora>7:30 pm - 8:20 pm</Hora>
+                <Salon>006 / 9105</Salon>
+            </Clase>
+        </Lunes>
+
+
+        <Martes>
+            <Clase>
+                <Materia>Transmision y Comunicacion de Datos</Materia>
+                <Clave>TRANS</Clave>
+                <Hora>6:40 pm - 7:30 pm</Hora>
+                <Salon>228 / 4111</Salon>
+            </Clase>
+        </Martes>
+
+
+        <Miercoles>
+            <Clase>
+                <Materia>Programacion de Estructuras de Datos</Materia>
+                <Clave>PROEST</Clave>
+                <Hora>12:50 pm - 1:40 pm</Hora>
+                <Salon>004 / 2107</Salon>
+            </Clase>
+
+            <Clase>
+                <Materia>Analisis de Sistemas</Materia>
+                <Clave>ANSIS</Clave>
+                <Hora>5:50 pm - 6:40 pm</Hora>
+                <Salon>007 / 2107</Salon>
+            </Clase>
+
+            <Clase>
+                <Materia>Programacion Web</Materia>
+                <Clave>PROWEB</Clave>
+                <Hora>6:40 pm - 7:30 pm</Hora>
+                <Salon>012 / 4208</Salon>
+            </Clase>
+
+            <Clase>
+                <Materia>Administracion de Proyectos de Software</Materia>
+                <Clave>APROY</Clave>
+                <Hora>7:30 pm - 8:20 pm</Hora>
+                <Salon>006 / 9105</Salon>
+            </Clase>
+        </Miercoles>
+
+
+        <Jueves>
+            <Clase>
+                <Materia>Programacion Web Laboratorio</Materia>
+                <Clave>PROWEB</Clave>
+                <Hora>3:20 pm - 4:10 pm</Hora>
+                <Salon>406 / 4104</Salon>
+            </Clase>
+
+            <Clase>
+                <Materia>Contexto Social de la Profesion</Materia>
+                <Clave>CONT</Clave>
+                <Hora>5:00 pm - 5:50 pm</Hora>
+                <Salon>020 / 6300</Salon>
+            </Clase>
+
+            <Clase>
+                <Materia>Contexto Social de la Profesion</Materia>
+                <Clave>CONT</Clave>
+                <Hora>5:50 pm - 6:40 pm</Hora>
+                <Salon>020 / 6300</Salon>
+            </Clase>
+
+            <Clase>
+                <Materia>Contexto Social de la Profesion</Materia>
+                <Clave>CONT</Clave>
+                <Hora>6:40 pm - 7:30 pm</Hora>
+                <Salon>020 / 6300</Salon>
+            </Clase>
+        </Jueves>
+
+
+        <Viernes>
+            <Clase>
+                <Materia>Programacion de Estructuras de Datos</Materia>
+                <Clave>PROEST</Clave>
+                <Hora>12:50 pm - 1:40 pm</Hora>
+                <Salon>004 / 2107</Salon>
+            </Clase>
+
+            <Clase>
+                <Materia>Analisis de Sistemas</Materia>
+                <Clave>ANSIS</Clave>
+                <Hora>5:50 pm - 6:40 pm</Hora>
+                <Salon>007 / 2107</Salon>
+            </Clase>
+
+            <Clase>
+                <Materia>Programacion Web</Materia>
+                <Clave>PROWEB</Clave>
+                <Hora>6:40 pm - 7:30 pm</Hora>
+                <Salon>012 / 4208</Salon>
+            </Clase>
+
+            <Clase>
+                <Materia>Administracion de Proyectos de Software</Materia>
+                <Clave>APROY</Clave>
+                <Hora>7:30 pm - 8:20 pm</Hora>
+                <Salon>006 / 9105</Salon>
+            </Clase>
+        </Viernes>
+
+    </HorarioGeneral>
+
+
+    <!-- ================= INFORMACION DE MATERIAS ================= -->
+    <Materias>
+
+        <Materia id="CONT">
+            <Nombre>Contexto Social de la Profesion</Nombre>
+            <Descripcion>
+                Esta materia analiza el impacto social, etico y profesional
+                de la tecnologia y de los sistemas informaticos en la sociedad.
+            </Descripcion>
+            <Horario>Jueves 5:00 pm - 7:30 pm</Horario>
+            <Salon>020 / 6300</Salon>
+            <Profesor>Por asignar</Profesor>
+
+            <BotonRegresar>Volver a Inicio</BotonRegresar>
+        </Materia>
+
+
+        <Materia id="LIDE">
+            <Nombre>Liderazgo</Nombre>
+            <Descripcion>
+                La materia desarrolla habilidades de liderazgo, trabajo en equipo,
+                comunicacion y toma de decisiones en proyectos y organizaciones.
+            </Descripcion>
+            <Horario>Modalidad en linea</Horario>
+            <Salon>No aplica</Salon>
+            <Profesor>Por asignar</Profesor>
+
+            <BotonRegresar>Volver a Inicio</BotonRegresar>
+        </Materia>
+
+
+        <Materia id="PROEST">
+            <Nombre>Programacion de Estructuras de Datos</Nombre>
+            <Descripcion>
+                Se estudian estructuras como listas, pilas, colas y arboles,
+                asi como algoritmos para organizar y manipular informacion.
+            </Descripcion>
+            <Horario>
+                Lunes, Miercoles y Viernes 12:50 pm - 1:40 pm
+            </Horario>
+            <Salon>004 / 2107</Salon>
+            <Profesor>Por asignar</Profesor>
+
+            <BotonRegresar>Volver a Inicio</BotonRegresar>
+        </Materia>
+
+
+        <Materia id="PROWEB">
+            <Nombre>Programacion Web</Nombre>
+            <Descripcion>
+                La materia enseña el desarrollo de paginas y aplicaciones web
+                utilizando tecnologias frontend y backend.
+            </Descripcion>
+            <Horario>
+                Lunes, Miercoles y Viernes 6:40 pm - 7:30 pm
+            </Horario>
+            <Laboratorio>Jueves 3:20 pm - 4:10 pm</Laboratorio>
+            <Salon>012 / 4208</Salon>
+            <Profesor>Por asignar</Profesor>
+
+            <BotonRegresar>Volver a Inicio</BotonRegresar>
+        </Materia>
+
+
+        <Materia id="ANSIS">
+            <Nombre>Analisis de Sistemas</Nombre>
+            <Descripcion>
+                Se enfoca en el analisis, diseño y mejora de sistemas de informacion
+                para resolver problemas empresariales.
+            </Descripcion>
+            <Horario>
+                Lunes, Miercoles y Viernes 5:50 pm - 6:40 pm
+            </Horario>
+            <Salon>007 / 2107</Salon>
+            <Profesor>Por asignar</Profesor>
+
+            <BotonRegresar>Volver a Inicio</BotonRegresar>
+        </Materia>
+
+
+        <Materia id="TRANS">
+            <Nombre>Transmision y Comunicacion de Datos</Nombre>
+            <Descripcion>
+                La materia estudia las redes, protocolos y medios de transmision
+                utilizados para enviar informacion entre dispositivos.
+            </Descripcion>
+            <Horario>Martes 6:40 pm - 7:30 pm</Horario>
+            <Salon>228 / 4111</Salon>
+            <Profesor>Por asignar</Profesor>
+
+            <BotonRegresar>Volver a Inicio</BotonRegresar>
+        </Materia>
+
+
+        <Materia id="APROY">
+            <Nombre>Administracion de Proyectos de Software</Nombre>
+            <Descripcion>
+                Se aprenden metodologias y herramientas para planificar,
+                organizar y controlar proyectos de desarrollo de software.
+            </Descripcion>
+            <Horario>
+                Lunes, Miercoles y Viernes 7:30 pm - 8:20 pm
+            </Horario>
+            <Salon>006 / 9105</Salon>
+            <Profesor>Por asignar</Profesor>
+
+            <BotonRegresar>Volver a Inicio</BotonRegresar>
+        </Materia>
+
+    </Materias>
+
+
+    <!-- ================= RESUMEN FINAL ================= -->
+    <Resumen>
+        <HorasPresenciales>17</HorasPresenciales>
+        <HorasAsincronas>3</HorasAsincronas>
+        <HorasTotales>20</HorasTotales>
+    </Resumen>
+
+</HorarioUniversitario>
