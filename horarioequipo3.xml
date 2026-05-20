@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<horario_equipo>
+
+    <!-- ============================================================ -->
+    <!-- INTEGRANTE 1 - Reynaldo Emmanuel Ortiz Cruz #1997171         -->
+    <!-- ============================================================ -->
+    <horario_1997171-IAS-EJ2026>
+
+        <informacion-estudiante>
+            <nombre>Reynaldo Emmanuel Ortiz Cruz</nombre>
+            <matricula>1997171</matricula>
+            <carrera>IAS</carrera>
+            <semestre>6to Semestre</semestre>
+        </informacion-estudiante>
+
+        <clase dia="Lunes">
+            <materia horario="12:50pm - 1:40pm">
+                <nombre>Programacion de Estructuras de Datos</nombre>
+                <grupo>004</grupo>
+                <salon>2107</salon>
+            </materia>
+            <materia horario="5:50pm - 6:40pm">
+                <nombre>Analisis de Sistemas</nombre>
+                <grupo>007</grupo>
+                <salon>2107</salon>
+            </materia>
+            <materia horario="6:40pm - 7:30pm">
+                <nombre>Programacion Web</nombre>
+                <grupo>012</grupo>
+                <salon>4208</salon>
+            </materia>
+            <materia horario="7:30pm - 8:20pm">
+                <nombre>Administracion de Proyectos de Software</nombre>
+                <grupo>006</grupo>
+                <salon>9105</salon>
+            </materia>
+        </clase>
+
+        <clase dia="Martes">
+            <materia horario="6:40pm - 7:30pm">
+                <nombre>Transmision y Comunicacion de Datos</nombre>
+                <grupo>228</grupo>
+                <salon>4111</salon>
+            </materia>
+        </clase>
+
+        <clase dia="Miercoles">
+            <materia horario="12:50pm - 1:40pm">
+                <nombre>Programacion de Estructuras de Datos</nombre>
+                <grupo>004</grupo>
+                <salon>2107</salon>
+            </materia>
+            <materia horario="5:50pm - 6:40pm">
+                <nombre>Analisis de Sistemas</nombre>
+                <grupo>007</grupo>
+                <salon>2107</salon>
+            </materia>
+            <materia horario="6:40pm - 7:30pm">
+                <nombre>Programacion Web</nombre>
+                <grupo>012</grupo>
+                <salon>4208</salon>
+            </materia>
+            <materia horario="7:30pm - 8:20pm">
+                <nombre>Administracion de Proyectos de Software</nombre>
+                <grupo>006</grupo>
+                <salon>9105</salon>
+            </materia>
+        </clase>
+
+        <clase dia="Jueves">
+            <materia horario="3:20pm - 4:10pm">
+                <nombre>Programacion Web Laboratorio</nombre>
+                <grupo>406</grupo>
+                <salon>4104</salon>
+            </materia>
+            <materia horario="5:00pm - 7:30pm">
+                <nombre>Contexto Social de la Profesion</nombre>
+                <grupo>020</grupo>
+                <salon>6300</salon>
+            </materia>
+        </clase>
+
+        <clase dia="Viernes">
+            <materia horario="12:50pm - 1:40pm">
+                <nombre>Programacion de Estructuras de Datos</nombre>
+                <grupo>004</grupo>
+                <salon>2107</salon>
+            </materia>
+            <materia horario="5:50pm - 6:40pm">
+                <nombre>Analisis de Sistemas</nombre>
+                <grupo>007</grupo>
+                <salon>2107</salon>
+            </materia>
+            <materia horario="6:40pm - 7:30pm">
+                <nombre>Programacion Web</nombre>
+                <grupo>012</grupo>
+                <salon>4208</salon>
+            </materia>
+            <materia horario="7:30pm - 8:20pm">
+                <nombre>Administracion de Proyectos de Software</nombre>
+                <grupo>006</grupo>
+                <salon>9105</salon>
+            </materia>
+        </clase>
+
+        <clase dia="Sabado">
+            <materia horario="Modalidad en linea">
+                <nombre>Liderazgo</nombre>
+                <grupo>N/A</grupo>
+                <salon>No aplica</salon>
+            </materia>
+        </clase>
+
+    </horario_1997171-IAS-EJ2026>
+
+
+    <!-- ============================================================ -->
+    <!-- INTEGRANTE 2 - Norberto Alejandro Galindo Masson #2095408   -->
+    <!-- ============================================================ -->
+    <horario_2095408-IAS-EJ2026>
+
+        <informacion-estudiante>
+            <nombre>Norberto Alejandro Galindo Masson</nombre>
+            <matricula>2095408</matricula>
+            <carrera>IAS</carrera>
+            <semestre>6to Semestre</semestre>
+        </informacion-estudiante>
+
+        <clase dia="Lunes">
+            <materia horario="12:00pm - 1:40pm">
+                <nombre>Administracion de Proyectos de Software</nombre>
+                <grupo>N/A</grupo>
+                <salon>2106</salon>
+            </materia>
+            <materia horario="12:50pm - 2:30pm">
+                <nombre>Transmision y Comunicacion de Datos</nombre>
+                <grupo>N/A</grupo>
+                <salon>CIS1</salon>
+            </materia>
+            <materia horario="1:40pm - 2:30pm">
+                <nombre>Base de Datos y Lenguajes</nombre>
+                <grupo>N/A</grupo>
+                <salon>1303</salon>
+            </materia>
+            <materia horario="5:50pm - 7:30pm">
+                <nombre>Arquitectura de Computadoras</nombre>
+                <grupo>N/A</grupo>
+                <salon>4106</salon>
+            </materia>
+            <materia horario="6:40pm - 8:20pm">
+                <nombre>Programacion Web</nombre>
+                <grupo>N/A</grupo>
+                <salon>4208</salon>
+            </materia>
+        </clase>
+
+        <clase dia="Martes">
+            <materia horario="7:00am - 9:30am">
+                <nombre>Diseño y Especificacion de Software</nombre>
+                <grupo>N/A</grupo>
+                <salon>2105</salon>
+            </materia>
+            <materia horario="5:00pm - 6:40pm">
+                <nombre>Liderazgo y Emprendimiento</nombre>
+                <grupo>N/A</grupo>
+                <salon>3108</salon>
+            </materia>
+            <materia horario="6:40pm - 8:20pm">
+                <nombre>Laboratorio de Programacion Web</nombre>
+                <grupo>N/A</grupo>
+                <salon>4200</salon>
+            </materia>
+        </clase>
+
+        <clase dia="Miercoles">
+            <materia horario="12:00pm - 1:40pm">
+                <nombre>Administracion de Proyectos de Software</nombre>
+                <grupo>N/A</grupo>
+                <salon>2106</salon>
+            </materia>
+            <materia horario="12:50pm - 2:30pm">
+                <nombre>Transmision y Comunicacion de Datos</nombre>
+                <grupo>N/A</grupo>
+                <salon>CIS1</salon>
+            </materia>
+            <materia horario="1:40pm - 2:30pm">
+                <nombre>Base de Datos y Lenguajes</nombre>
+                <grupo>N/A</grupo>
+                <salon>1303</salon>
+            </materia>
+            <materia horario="5:50pm - 7:30pm">
+                <nombre>Arquitectura de Computadoras</nombre>
+                <grupo>N/A</grupo>
+                <salon>4106</salon>
+            </materia>
+            <materia horario="6:40pm - 8:20pm">
+                <nombre>Programacion Web</nombre>
+                <grupo>N/A</grupo>
+                <salon>4208</salon>
+            </materia>
+        </clase>
+
+        <clase dia="Jueves">
+            <materia horario="5:00pm - 7:30pm">
+                <nombre>Contexto Social de la Profesion</nombre>
+                <grupo>N/A</grupo>
+                <salon>6300</salon>
+            </materia>
+        </clase>
+
+        <clase dia="Viernes">
+            <materia horario="12:00pm - 1:40pm">
+                <nombre>Administracion de Proyectos de Software</nombre>
+                <grupo>N/A</grupo>
+                <salon>2106</salon>
+            </materia>
+            <materia horario="12:50pm - 2:30pm">
+                <nombre>Transmision y Comunicacion de Datos</nombre>
+                <grupo>N/A</grupo>
+                <salon>CIS1</salon>
+            </materia>
+            <materia horario="1:40pm - 2:30pm">
+                <nombre>Base de Datos y Lenguajes</nombre>
+                <grupo>N/A</grupo>
+                <salon>1303</salon>
+            </materia>
+            <materia horario="5:50pm - 7:30pm">
+                <nombre>Arquitectura de Computadoras</nombre>
+                <grupo>N/A</grupo>
+                <salon>4106</salon>
+            </materia>
+            <materia horario="6:40pm - 8:20pm">
+                <nombre>Programacion Web</nombre>
+                <grupo>N/A</grupo>
+                <salon>4208</salon>
+            </materia>
+        </clase>
+
+        <clase dia="Sabado">
+            <materia horario="7:00am - 9:30am">
+                <nombre>Taller de Programacion Orientada a Objetos</nombre>
+                <grupo>N/A</grupo>
+                <salon>4106</salon>
+            </materia>
+        </clase>
+
+    </horario_2095408-IAS-EJ2026>
+
+
+    <!-- ============================================================ -->
+    <!-- INTEGRANTE 3 - Roberto Javier Mendez Rangel #2050698         -->
+    <!-- ============================================================ -->
+    <horario_2050698-IAS-EJ2026>
+
+        <informacion-estudiante>
+            <nombre>Roberto Javier Mendez Rangel</nombre>
+            <matricula>2050698</matricula>
+            <carrera>IAS</carrera>
+            <semestre>7mo Semestre</semestre>
+        </informacion-estudiante>
+
+        <clase dia="Lunes">
+            <materia horario="1:40pm - 2:20pm">
+                <nombre>Base de Datos y Lenguajes</nombre>
+                <grupo>002</grupo>
+                <salon>1303</salon>
+            </materia>
+            <materia horario="6:40pm - 7:30pm">
+                <nombre>Programacion Web</nombre>
+                <grupo>012</grupo>
+                <salon>4208</salon>
+            </materia>
+            <materia horario="7:30pm - 8:20pm">
+                <nombre>Redes Computacionales</nombre>
+                <grupo>005</grupo>
+                <salon>4213</salon>
+            </materia>
+            <materia horario="8:20pm - 9:10pm">
+                <nombre>Administracion de Proyectos de Software</nombre>
+                <grupo>008</grupo>
+                <salon>9015</salon>
+            </materia>
+            <materia horario="9:10pm - 10:00pm">
+                <nombre>Optimizacion</nombre>
+                <grupo>014</grupo>
+                <salon>1105</salon>
+            </materia>
+        </clase>
+
+        <clase dia="Martes">
+            <materia horario="5:00pm - 7:30pm">
+                <nombre>Arquitectura de Computadoras</nombre>
+                <grupo>010</grupo>
+                <salon>4200</salon>
+            </materia>
+        </clase>
+
+        <clase dia="Miercoles">
+            <materia horario="1:40pm - 2:20pm">
+                <nombre>Base de Datos y Lenguajes</nombre>
+                <grupo>002</grupo>
+                <salon>1303</salon>
+            </materia>
+            <materia horario="6:40pm - 7:30pm">
+                <nombre>Programacion Web</nombre>
+                <grupo>012</grupo>
+                <salon>4208</salon>
+            </materia>
+            <materia horario="7:30pm - 8:20pm">
+                <nombre>Redes Computacionales</nombre>
+                <grupo>005</grupo>
+                <salon>4213</salon>
+            </materia>
+            <materia horario="8:20pm - 9:10pm">
+                <nombre>Administracion de Proyectos de Software</nombre>
+                <grupo>008</grupo>
+                <salon>9015</salon>
+            </materia>
+            <materia horario="9:10pm - 10:00pm">
+                <nombre>Optimizacion</nombre>
+                <grupo>014</grupo>
+                <salon>1105</salon>
+            </materia>
+        </clase>
+
+        <clase dia="Jueves">
+            <materia horario="10:20am - 12:00pm">
+                <nombre>Taller de Programacion Orientada a Objetos</nombre>
+                <grupo>005</grupo>
+                <salon>No escolarizada</salon>
+            </materia>
+        </clase>
+
+        <clase dia="Viernes">
+            <materia horario="1:40pm - 2:20pm">
+                <nombre>Base de Datos y Lenguajes</nombre>
+                <grupo>002</grupo>
+                <salon>1303</salon>
+            </materia>
+            <materia horario="6:40pm - 7:30pm">
+                <nombre>Programacion Web</nombre>
+                <grupo>012</grupo>
+                <salon>4208</salon>
+            </materia>
+            <materia horario="7:30pm - 8:20pm">
+                <nombre>Redes Computacionales</nombre>
+                <grupo>005</grupo>
+                <salon>4213</salon>
+            </materia>
+            <materia horario="8:20pm - 9:10pm">
+                <nombre>Administracion de Proyectos de Software</nombre>
+                <grupo>008</grupo>
+                <salon>9015</salon>
+            </materia>
+            <materia horario="9:10pm - 10:00pm">
+                <nombre>Optimizacion</nombre>
+                <grupo>014</grupo>
+                <salon>1105</salon>
+            </materia>
+        </clase>
+
+    </horario_2050698-IAS-EJ2026>
+
+
+    <!-- ============================================================ -->
+    <!-- INTEGRANTE 4 - Rolando Rodriguez Alonso #2062942             -->
+    <!-- ============================================================ -->
+    <horario_2062942-IAS-EJ2026>
+
+        <informacion-estudiante>
+            <nombre>Rolando Rodriguez Alonso</nombre>
+            <matricula>2062942</matricula>
+            <carrera>IAS</carrera>
+            <semestre>N/A</semestre>
+        </informacion-estudiante>
+
+        <clase dia="Lunes">
+            <materia horario="5:00pm - 5:50pm">
+                <nombre>Transmision y Comunicacion de Datos</nombre>
+                <grupo>019</grupo>
+                <salon>CIS1</salon>
+            </materia>
+            <materia horario="6:40pm - 7:30pm">
+                <nombre>Programacion Web</nombre>
+                <grupo>012</grupo>
+                <salon>4208</salon>
+            </materia>
+        </clase>
+
+        <clase dia="Martes">
+            <materia horario="5:00pm - 7:30pm">
+                <nombre>Arquitectura de Computadoras</nombre>
+                <grupo>010</grupo>
+                <salon>4200</salon>
+            </materia>
+        </clase>
+
+        <clase dia="Miercoles">
+            <materia horario="5:00pm - 5:50pm">
+                <nombre>Transmision y Comunicacion de Datos</nombre>
+                <grupo>019</grupo>
+                <salon>CIS1</salon>
+            </materia>
+            <materia horario="6:40pm - 7:30pm">
+                <nombre>Programacion Web</nombre>
+                <grupo>012</grupo>
+                <salon>4208</salon>
+            </materia>
+        </clase>
+
+        <clase dia="Jueves">
+            <materia horario="4:10pm - 5:00pm">
+                <nombre>Transmision y Comunicacion de Datos (Laboratorio)</nombre>
+                <grupo>436</grupo>
+                <salon>4102</salon>
+            </materia>
+            <materia horario="5:00pm - 7:30pm">
+                <nombre>Sistemas Operativos</nombre>
+                <grupo>012</grupo>
+                <salon>4211</salon>
+            </materia>
+        </clase>
+
+        <clase dia="Viernes">
+            <materia horario="5:00pm - 5:50pm">
+                <nombre>Transmision y Comunicacion de Datos</nombre>
+                <grupo>019</grupo>
+                <salon>CIS1</salon>
+            </materia>
+            <materia horario="6:40pm - 7:30pm">
+                <nombre>Programacion Web</nombre>
+                <grupo>012</grupo>
+                <salon>4208</salon>
+            </materia>
+        </clase>
+
+        <clase dia="Sabado">
+            <materia horario="7:00am - 9:30am">
+                <nombre>Taller de Programacion Orientada a Objetos</nombre>
+                <grupo>003</grupo>
+                <salon>4106</salon>
+            </materia>
+            <materia horario="9:30am - 12:00pm">
+                <nombre>Programacion Orientada a Objetos</nombre>
+                <grupo>002</grupo>
+                <salon>4204</salon>
+            </materia>
+            <materia horario="5:00pm - 7:30pm">
+                <nombre>Base de Datos</nombre>
+                <grupo>002</grupo>
+                <salon>4200</salon>
+            </materia>
+        </clase>
+
+    </horario_2062942-IAS-EJ2026>
+
+
+    <!-- ============================================================ -->
+    <!-- INTEGRANTE 5 - Dana Paola Rios Reyes #2055979               -->
+    <!-- ============================================================ -->
+    <horario_2055979-IAS-EJ2026>
+
+        <informacion-estudiante>
+            <nombre>Dana Paola Rios Reyes</nombre>
+            <matricula>2055979</matricula>
+            <carrera>IAS</carrera>
+            <semestre>6to Semestre</semestre>
+        </informacion-estudiante>
+
+        <clase dia="Lunes">
+            <materia horario="8:00am - 8:45am">
+                <nombre>Optimizacion</nombre>
+                <grupo>N/A</grupo>
+                <salon>1103</salon>
+            </materia>
+            <materia horario="9:30am - 10:20am">
+                <nombre>Analisis de Sistemas</nombre>
+                <grupo>N/A</grupo>
+                <salon>4108</salon>
+            </materia>
+            <materia horario="11:10am - 12:00pm">
+                <nombre>Programacion de Estructura de Datos</nombre>
+                <grupo>N/A</grupo>
+                <salon>1102</salon>
+            </materia>
+            <materia horario="6:30pm - 7:15pm">
+                <nombre>Programacion Web</nombre>
+                <grupo>N/A</grupo>
+                <salon>4208</salon>
+            </materia>
+            <materia horario="7:15pm - 8:00pm">
+                <nombre>Administracion de Proyectos de Software</nombre>
+                <grupo>N/A</grupo>
+                <salon>9105</salon>
+            </materia>
+            <materia horario="No escolarizada">
+                <nombre>Contexto Social</nombre>
+                <grupo>N/A</grupo>
+                <salon>No escolarizada</salon>
+            </materia>
+            <materia horario="No escolarizada">
+                <nombre>Liderazgo</nombre>
+                <grupo>N/A</grupo>
+                <salon>No escolarizada</salon>
+            </materia>
+        </clase>
+
+        <clase dia="Miercoles">
+            <materia horario="8:00am - 8:45am">
+                <nombre>Optimizacion</nombre>
+                <grupo>N/A</grupo>
+                <salon>1103</salon>
+            </materia>
+            <materia horario="9:30am - 10:20am">
+                <nombre>Analisis de Sistemas</nombre>
+                <grupo>N/A</grupo>
+                <salon>4108</salon>
+            </materia>
+            <materia horario="11:10am - 12:00pm">
+                <nombre>Programacion de Estructura de Datos</nombre>
+                <grupo>N/A</grupo>
+                <salon>1102</salon>
+            </materia>
+            <materia horario="6:30pm - 7:15pm">
+                <nombre>Programacion Web</nombre>
+                <grupo>N/A</grupo>
+                <salon>4208</salon>
+            </materia>
+            <materia horario="7:15pm - 8:00pm">
+                <nombre>Administracion de Proyectos de Software</nombre>
+                <grupo>N/A</grupo>
+                <salon>9105</salon>
+            </materia>
+        </clase>
+
+        <clase dia="Viernes">
+            <materia horario="8:00am - 8:45am">
+                <nombre>Optimizacion</nombre>
+                <grupo>N/A</grupo>
+                <salon>1103</salon>
+            </materia>
+            <materia horario="9:30am - 10:20am">
+                <nombre>Analisis de Sistemas</nombre>
+                <grupo>N/A</grupo>
+                <salon>4108</salon>
+            </materia>
+            <materia horario="11:10am - 12:00pm">
+                <nombre>Programacion de Estructura de Datos</nombre>
+                <grupo>N/A</grupo>
+                <salon>1102</salon>
+            </materia>
+            <materia horario="6:30pm - 7:15pm">
+                <nombre>Programacion Web</nombre>
+                <grupo>N/A</grupo>
+                <salon>4208</salon>
+            </materia>
+            <materia horario="7:15pm - 8:00pm">
+                <nombre>Administracion de Proyectos de Software</nombre>
+                <grupo>N/A</grupo>
+                <salon>9105</salon>
+            </materia>
+        </clase>
+
+        <clase dia="Sabado">
+            <materia horario="12:00pm - 2:30pm">
+                <nombre>Programacion Orientada a Objetos</nombre>
+                <grupo>N/A</grupo>
+                <salon>2300</salon>
+            </materia>
+            <materia horario="2:30pm - 5:00pm">
+                <nombre>Transmision y Comunicacion de Datos</nombre>
+                <grupo>N/A</grupo>
+                <salon>4213</salon>
+            </materia>
+        </clase>
+
+    </horario_2055979-IAS-EJ2026>
+
+</horario_equipo>
