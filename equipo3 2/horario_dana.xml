@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<horario>
+    <semestre>6to Semestre</semestre>
+
+    <materias>
+        <materia>
+            <nombre>Contexto Social</nombre>
+            <dia>Lunes</dia>
+            <salon>no escolarizada</salon>
+        </materia>
+
+        <materia>
+            <nombre>Liderazgo</nombre>
+            <dia>Lunes</dia>
+            <salon>no escolarizada</salon>
+        </materia>
+
+        <materia>
+            <nombre>Optimización</nombre>
+            <dia>Lunes, Miercoles y Viernes</dia>
+            <hora>08:00 - 08:45</hora>
+            <salon>Aula 1103</salon>
+        </materia>
+
+        <materia>
+            <nombre>Programación de Estructura de Datos</nombre>
+            <dia>Lunes, Miercoles y Viernes</dia>
+            <hora>11:10 - 12:00</hora>
+            <salon>Aula 1102</salon>
+        </materia>
+
+        <materia>
+            <nombre>Programación Web</nombre>
+            <dia>Lunes, Miércoles y Viernes</dia>
+            <hora>18:30 - 19:15</hora>
+            <salon>Aula 4208</salon>
+        </materia>
+
+        <materia>
+            <nombre>Análisis de Sistemas</nombre>
+            <dia>Lunes, Miércoles y Viernes</dia>
+            <hora>09:30 - 10:20</hora>
+            <salon>Aula 4108</salon>
+        </materia>
+
+        <materia>
+            <nombre>Transmisión y Comunicación de Datos</nombre>
+            <dia>Sabado</dia>
+            <hora>02:30 - 05:00</hora>
+            <salon>Aula 4213</salon>
+        </materia>
+
+        <materia>
+            <nombre>Administración de Proyectos de Software</nombre>
+            <dia>Lunes, Miercoles y Viernes</dia>
+            <hora>19:15 - 20:00</hora>
+            <salon>Aula 9105</salon>
+        </materia>
+
+        <materia>
+            <nombre>Programación Orientada a Objetos</nombre>
+            <dia>Sabado</dia>
+            <hora>12:00 - 02:30</hora>
+            <salon>Aula 2300</salon>
+        </materia>
+    </materias>
+</horario>

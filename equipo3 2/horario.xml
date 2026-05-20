@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<horario>
+  <semestre>6to Semestre</semestre>
+  <materias>
+    <materia>
+      <nombre>Diseño y Especificación de Software</nombre>
+      <dia>Martes</dia>
+      <hora>07:00 - 09:30</hora>
+      <salon>Aula 2105</salon>
+    </materia>
+    <materia>
+      <nombre>Taller de Programación Orientada a Objetos</nombre>
+      <dia>Sábado</dia>
+      <hora>07:00 - 09:30</hora>
+      <salon>Aula 4106</salon>
+    </materia>
+    <materia>
+      <nombre>Administración de Proyectos de Software</nombre>
+      <dia>Lunes, Miércoles y Viernes</dia>
+      <hora>12:00 - 13:40</hora>
+      <salon>Aula 2106</salon>
+    </materia>
+    <materia>
+      <nombre>Transmisión y Comunicación de Datos</nombre>
+      <dia>Lunes, Miércoles y Viernes</dia>
+      <hora>12:50 - 14:30</hora>
+      <salon>Aula CIS1</salon>
+    </materia>
+    <materia>
+      <nombre>Base de Datos y Lenguajes</nombre>
+      <dia>Lunes, Miércoles y Viernes</dia>
+      <hora>13:40 - 14:30</hora>
+      <salon>Aula 1303</salon>
+    </materia>
+    <materia>
+      <nombre>Liderazgo y Emprendimiento</nombre>
+      <dia>Martes</dia>
+      <hora>17:00 - 19:30 (Martes de 17:00 a 18:40)</hora>
+      <salon>Aula 3108</salon>
+    </materia>
+    <materia>
+      <nombre>Contexto Social de la Profesión</nombre>
+      <dia>Jueves</dia>
+      <hora>17:00 - 19:30</hora>
+      <salon>Aula 6300</salon>
+    </materia>
+    <materia>
+      <nombre>Arquitectura de Computadoras</nombre>
+      <dia>Lunes, Miércoles y Viernes</dia>
+      <hora>17:50 - 19:30</hora>
+      <salon>Aula 4106</salon>
+    </materia>
+    <materia>
+      <nombre>Programación Web</nombre>
+      <dia>Lunes, Miércoles y Viernes</dia>
+      <hora>18:40 - 20:20</hora>
+      <salon>Aula 4208</salon>
+    </materia>
+    <materia>
+      <nombre>Laboratorio de Programación Web</nombre>
+      <dia>Martes</dia>
+      <hora>18:40 - 20:20</hora>
+      <salon>Aula 4200</salon>
+    </materia>
+  </materias>
+</horario>

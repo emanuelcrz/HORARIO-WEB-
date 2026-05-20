@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Semestre Actual</title>
+<style>
+  body { font-family: 'Segoe UI', sans-serif; background: #f4f6f8; color: #2d3748; margin: 0; padding: 0; }
+  header { background: linear-gradient(135deg, #1b4332, #40916c); color: white; padding: 50px 20px; text-align: center; }
+  header h1 { margin: 0; font-size: 2.2rem; }
+  header p, header h2 { margin: 8px 0 0; font-size: 1rem; opacity: 0.9; font-weight: 300; }
+  section { max-width: 900px; margin: 30px auto; background: white; padding: 30px; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); }
+  section h2 { color: #1b4332; border-bottom: 2px solid #d8f3dc; padding-bottom: 8px; margin-top: 0; }
+  ul { line-height: 2; padding-left: 20px; }
+  button { background: #1b4332; color: white; border: none; padding: 10px 18px; margin: 5px; border-radius: 8px; cursor: pointer; font-size: 0.9rem; transition: background 0.2s; }
+  button:hover { background: #40916c; }
+  .materia { display: none; background: #d8f3dc; border-radius: 10px; padding: 18px; margin-top: 15px; }
+  .materia h3 { margin-top: 0; color: #1b4332; }
+  img { border-radius: 10px; max-width: 100%; }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Mi Semestre Actual</h1>
+    <p>Proyecto Individual #1 - Programación Web</p>
+    <h2>Dana Paola Rios Reyes 2055979</h2>
+</header>
+
+<section>
+    <h2>¿Qué semestre?</h2>
+    <p>6to Semestre</p>
+</section>
+
+<section>
+    <h2>¿Cuáles materias?</h2>
+    <ul>
+        <li>Contexto Social</li>
+        <li>Liderazgo</li>
+        <li>Optimización</li>
+        <li>Programación de Estructura de Datos</li>
+        <li>Programación Web</li>
+        <li>Análisis de Sistemas</li>
+        <li>Transmisión y Comunicación de Datos</li>
+        <li>Administración de Proyectos de Software</li>
+        <li>Programación Orientada a Objetos</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Horario</h2>
+    <img src="foto/horario.jpg" width="50%">
+</section>
+
+<section>
+    <h2>Información de Materias</h2>
+
+    <button onclick="mostrar('m1')">Contexto Social</button>
+    <button onclick="mostrar('m2')">Liderazgo</button>
+    <button onclick="mostrar('m3')">Optimización</button>
+    <button onclick="mostrar('m4')">Estructura de Datos</button>
+    <button onclick="mostrar('m5')">Programación Web</button>
+    <button onclick="mostrar('m6')">Análisis de Sistemas</button>
+    <button onclick="mostrar('m7')">Transmisión de Datos</button>
+    <button onclick="mostrar('m8')">Adm. Proyectos</button>
+    <button onclick="mostrar('m9')">POO</button>
+
+    <div id="m1" class="materia"><h3>Contexto Social</h3><p>Analiza la sociedad y su impacto en el entorno profesional.</p></div>
+    <div id="m2" class="materia"><h3>Liderazgo</h3><p>Desarrolla habilidades para dirigir equipos y tomar decisiones.</p></div>
+    <div id="m3" class="materia"><h3>Optimización</h3><p>Se enfoca en resolver problemas buscando la mejor solución.</p><p>Resuelvo problemas con el método simplex.</p></div>
+    <div id="m4" class="materia"><h3>Programación de Estructura de Datos</h3><p>Uso de pilas, colas, listas y árboles en programación.</p></div>
+    <div id="m5" class="materia"><h3>Programación Web</h3><p>Diseño de páginas web usando HTML, CSS y JavaScript.</p></div>
+    <div id="m6" class="materia"><h3>Análisis de Sistemas</h3><p>Estudio de procesos para crear soluciones tecnológicas.</p></div>
+    <div id="m7" class="materia"><h3>Transmisión y Comunicación de Datos</h3><p>Funcionamiento de redes y transferencia de información.</p></div>
+    <div id="m8" class="materia"><h3>Administración de Proyectos de Software</h3><p>Planeación, control y seguimiento de proyectos tecnológicos.</p></div>
+    <div id="m9" class="materia"><h3>Programación Orientada a Objetos</h3><p>Uso de clases, objetos, herencia y encapsulamiento.</p></div>
+</section>
+
+<script>
+function mostrar(id) {
+    const divs = document.querySelectorAll('.materia');
+    divs.forEach(d => d.style.display = 'none');
+    const el = document.getElementById(id);
+    if (el) el.style.display = 'block';
+}
+</script>
+</body>
+</html>
